@@ -1,0 +1,190 @@
+.service {
+  padding: 160px 0px;
+  @include mobile {
+    padding: 120px 0px;
+  }
+  h5 {
+    width: 856px;
+    height: 174px;
+    line-height: 120%;
+    @include mobile {
+      width: 351px;
+      height: 190px;
+      margin-top: 24px;
+    }
+  }
+  h6 {
+    line-height: 120%;
+  }
+  .card-group {
+    margin-top: 80px;
+    @include mobile {
+      margin-top: 48px;
+    }
+    li {
+      border: 1px solid #525252;
+      padding: 80px 40px;
+      width: 26%;
+      border-radius: 15px;
+      @include mobile {
+        width: 93%;
+        padding: 40px 12px;
+        margin-top: 12px;
+      }
+      img {
+        margin-left: 12px;
+      }
+      p {
+        color: #f2f2f2;
+      }
+      h6 {
+        margin: 26px 0px 20px 0px;
+        @include mobile {
+          font-size: $font-md;
+        }
+      }
+    }
+  }
+}
+
+.parnet {
+  .logobox {
+    img.logo1 {
+      margin: 80px auto 20px auto;
+    }
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  .card-group {
+    margin-top: 160px;
+    @include mobile {
+      margin-top: 48px;
+    }
+    li {
+      padding: 40px;
+      width: 26%;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.08);
+      box-shadow: 0px 100px 80px rgba(18, 18, 18, 0.07),
+        0px 41.7776px 33.4221px rgba(18, 18, 18, 0.0503198),
+        0px 22.3363px 17.869px rgba(18, 18, 18, 0.0417275),
+        0px 12.5216px 10.0172px rgba(18, 18, 18, 0.035),
+        0px 6.6501px 5.32008px rgba(18, 18, 18, 0.0282725),
+        0px 2.76726px 2.21381px rgba(18, 18, 18, 0.0196802);
+      @include mobile {
+        width: 93%;
+        padding: 40px 15px;
+        margin-top: 12px;
+        margin: 12px auto 0px auto;
+      }
+
+      p.des {
+        color: #f2f2f2;
+        margin: 20px 0px;
+        height: 215px;
+        line-height: 150%;
+        @include mobile {
+          height: 165px;
+        }
+      }
+      .name {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+.container-fluid-2 {
+  background-color: white;
+  border-radius: 160px;
+  @include mobile {
+    border-radius: 20px;
+  }
+  color: black;
+
+  .tool {
+    margin-top: 120px;
+    overflow: hidden;
+    padding: 160px 0px;
+    @include mobile {
+      padding: 80px 0px;
+    }
+    p {
+      font-size: 80px;
+      font-weight: $font-w;
+      text-align: center;
+      @include mobile {
+        font-size: $font-md;
+      }
+    }
+    .search {
+      margin: 80px auto 0px auto;
+      position: relative;
+      @include mobile {
+        align-items: center;
+        margin: 32px auto 0px auto;
+      }
+      img {
+        left: 43px;
+        position: absolute;
+        z-index: 100;
+        @include mobile {
+          top: 19px;
+        }
+      }
+    }
+    input {
+      width: 100%;
+      padding: 20px 0px;
+      padding-left: 76px;
+      background-color: #f2f2f2;
+      border: none;
+      border-radius: 16px;
+      font-size: 16px;
+    }
+    .toolbtn {
+      margin: 24px 0px 40px 0px;
+      p {
+        font-size: 16px;
+        margin-right: 15px;
+      }
+      li.active {
+        background-color: #f2f2f2;
+        border-radius: 16px;
+        color: black;
+        font-weight: 900;
+      }
+      ul.hidden-lgf {
+        @include mobile {
+          display: block;
+          overflow-x: scroll;
+        }
+      }
+      li {
+        color: #919191;
+        padding: 8px 16px;
+        @include mobile {
+          display: inline-block;
+        }
+
+        &:hover {
+          background-color: #f2f2f2;
+          border-radius: 16px;
+          color: black;
+          font-weight: 900;
+        }
+      }
+      button {
+        padding: 20px 40px;
+        background-color: white;
+        border-radius: 16px;
+        border: 1px solid #f2f2f2;
+        @include mobile {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.nav {
+  padding: 20px 0px;
+  @include mobile {
+    padding: 28px 0px;
+  }
+  border-bottom: 1px solid $color;
+  .logo {
+    width: 35.6px;
+    height: 40px;
+    margin-right: 14px;
+    @include mobile {
+      width: 21.36px;
+      height: 24px;
+      margin-right: 9px;
+    }
+  }
+  .logo-word {
+    width: 188.99px;
+    height: 40px;
+    @include mobile {
+      width: 113.4px;
+      height: 24px;
+    }
+  }
+  li {
+    @include mobile {
+      display: none;
+    }
+  }
+  .bar {
+    display: none;
+    @include mobile {
+      display: block;
+      margin-right: 11px;
+      cursor: pointer;
+    }
+  }
+}

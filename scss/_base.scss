@@ -1,0 +1,96 @@
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: $bgc;
+  color: $color;
+}
+.container,
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+*,
+*::before,
+*::after {
+  box-sizing: boder-box;
+}
+.container-fluid,
+.container-fluid-2 {
+  max-width: 1920px;
+  padding: 0px 12px;
+}
+.container {
+  max-width: 1296px;
+}
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.items-center {
+  align-items: center;
+}
+.column-mobile {
+  @include mobile {
+    flex-direction: column;
+  }
+}
+.column {
+  flex-direction: column;
+}
+.mx-auto {
+  margin: 0 auto;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+.ml-15 {
+  margin-left: 15px;
+}
+.hidden-sm {
+  display: block;
+  @include mobile {
+    display: none;
+  }
+}
+.hidden-smf {
+  display: flex;
+  @include mobile {
+    display: none;
+  }
+}
+.hidden-lg {
+  display: none;
+  @include mobile {
+    display: block;
+  }
+}
+.hidden-lgf {
+  display: none;
+  @include mobile {
+    display: flex;
+  }
+}
+.hide {
+  @include mobile {
+    display: none;
+  }
+}
+h5 {
+  font-size: $font-lg;
+  font-weight: $font-w;
+  @include mobile {
+    font-size: $font-md;
+  }
+}
+h6 {
+  font-size: $font-md;
+  font-weight: $font-w;
+  @include mobile {
+    font-size: 20px;
+  }
+}
