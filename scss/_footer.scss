@@ -1,0 +1,105 @@
+.footer {
+  background-color: $bgc;
+  color: $color;
+  h5 {
+    @include mobile {
+      width: 224px;
+      margin: 0 auto;
+      line-height: 120%;
+      font-size: 32px;
+    }
+  }
+  .social {
+    padding-bottom: 30px;
+  }
+  .start {
+    padding: 80px 0px;
+    margin: 80px 0px;
+    text-align: center;
+
+    // border-bottom: 1px solid #f2f2f2;
+    button {
+      margin-top: 60px;
+      background-color: $bgc;
+      color: $color;
+      padding: 20px 40px;
+      border-radius: 16px;
+      border: 1px solid #ffffff;
+      font-size: 20px;
+      font-weight: 900;
+
+      img {
+        margin-left: 16px;
+      }
+    }
+  }
+  .nav-block {
+    position: relative;
+    font-weight: 900;
+    border-bottom: 1px solid #f2f2f2;
+    border-top: 1px solid #f2f2f2;
+    padding: 80px 0px;
+    .word {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      @include mobile {
+        left: 0;
+      }
+    }
+    .flex.column {
+      margin-top: 60px;
+    }
+    p {
+      font-size: 80px;
+      @include mobile {
+        font-size: 48px;
+      }
+    }
+    .logo {
+      width: 35.6px;
+      height: 40px;
+      margin-right: 14px;
+    }
+    .logo-word {
+      width: 188.99px;
+      height: 40px;
+    }
+  }
+  .last {
+    font-size: 16px;
+    padding: 12px 0px;
+    margin: 20px 0px;
+    ul {
+      margin-left: 100px;
+    }
+    li {
+      margin: 0px 12px;
+    }
+    img {
+      margin-left: 15px;
+    }
+  }
+  .tw {
+    padding: 0px 20px;
+  }
+}
+.nav-2 {
+  .flex.column {
+    padding: 196px 0px;
+    border-bottom: 1px solid #f2f2f2;
+  }
+  p.text {
+    font-size: 80px;
+    text-align: center;
+  }
+  .last {
+    padding: 30px 0px;
+  }
+  .tw {
+    padding: 0px 20px;
+  }
+  .social {
+    margin-top: 36px;
+  }
+}

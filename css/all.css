@@ -170,6 +170,10 @@ img {
   justify-content: center;
 }
 
+.justify-end {
+  justify-content: end;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -188,8 +192,16 @@ img {
   flex-direction: column;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 .mx-auto {
   margin: 0 auto;
+}
+
+.mt-20 {
+  margin-top: 20px;
 }
 
 .mr-20 {
@@ -198,6 +210,10 @@ img {
 
 .ml-15 {
   margin-left: 15px;
+}
+
+.mt-30 {
+  margin-top: 30px;
 }
 
 .hidden-sm {
@@ -557,4 +573,181 @@ h6 {
   .container-fluid-2 .tool .toolbtn button {
     font-size: 16px;
   }
+}
+.container-fluid-2 .tool .card-group {
+  transition: all 0.3s;
+}
+@media (max-width: 568px) {
+  .container-fluid-2 .tool .card-group {
+    margin-top: 0px;
+  }
+}
+.container-fluid-2 .tool .card-group li {
+  border: 1px solid #f2f2f2;
+  border-radius: 16px;
+  width: 32%;
+}
+@media (max-width: 568px) {
+  .container-fluid-2 .tool .card-group li {
+    width: 100%;
+    margin-top: 12px;
+  }
+}
+.container-fluid-2 .tool .card-group li:hover .imgbox img {
+  transform: scale(1.2);
+}
+.container-fluid-2 .tool .card-group li .card .imgbox {
+  border-radius: 16px 16px 0px 0px;
+  overflow: hidden;
+}
+.container-fluid-2 .tool .card-group li .card .imgbox img {
+  transition: all 0.3s;
+  width: 100%;
+}
+.container-fluid-2 .tool .card-group li .card .text {
+  padding: 20px 32px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.container-fluid-2 .tool .card-group li .card .text h6 {
+  font-size: 20px;
+}
+.container-fluid-2 .tool .card-group li .card .text p {
+  font-size: 14px;
+  margin-top: 12px;
+  color: #525252;
+  text-align: left;
+  line-height: 150%;
+  font-weight: 400;
+  height: 42px;
+}
+.container-fluid-2 .tool .card-group li .card .line {
+  padding: 20px 32px;
+}
+.container-fluid-2 .tool .card-group li .card .line p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.container-fluid-2 .tool .card-group li .card .line p.title {
+  font-weight: 900;
+}
+.container-fluid-2 .tool .card-group li .card .bottom {
+  border-bottom: 1px solid #f2f2f2;
+}
+.container-fluid-2 .tool .paging {
+  margin-top: 40px;
+}
+.container-fluid-2 .tool .paging li {
+  padding: 16px 20px;
+  font-size: 14px;
+}
+.container-fluid-2 .tool .paging li.active {
+  background-color: black;
+  color: white;
+  border-radius: 16px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+}
+@media (max-width: 568px) {
+  .footer h5 {
+    width: 224px;
+    margin: 0 auto;
+    line-height: 120%;
+    font-size: 32px;
+  }
+}
+.footer .social {
+  padding-bottom: 30px;
+}
+.footer .start {
+  padding: 80px 0px;
+  margin: 80px 0px;
+  text-align: center;
+}
+.footer .start button {
+  margin-top: 60px;
+  background-color: black;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 16px;
+  border: 1px solid #ffffff;
+  font-size: 20px;
+  font-weight: 900;
+}
+.footer .start button img {
+  margin-left: 16px;
+}
+.footer .nav-block {
+  position: relative;
+  font-weight: 900;
+  border-bottom: 1px solid #f2f2f2;
+  border-top: 1px solid #f2f2f2;
+  padding: 80px 0px;
+}
+.footer .nav-block .word {
+  position: absolute;
+  top: 60px;
+  right: 0;
+}
+@media (max-width: 568px) {
+  .footer .nav-block .word {
+    left: 0;
+  }
+}
+.footer .nav-block .flex.column {
+  margin-top: 60px;
+}
+.footer .nav-block p {
+  font-size: 80px;
+}
+@media (max-width: 568px) {
+  .footer .nav-block p {
+    font-size: 48px;
+  }
+}
+.footer .nav-block .logo {
+  width: 35.6px;
+  height: 40px;
+  margin-right: 14px;
+}
+.footer .nav-block .logo-word {
+  width: 188.99px;
+  height: 40px;
+}
+.footer .last {
+  font-size: 16px;
+  padding: 12px 0px;
+  margin: 20px 0px;
+}
+.footer .last ul {
+  margin-left: 100px;
+}
+.footer .last li {
+  margin: 0px 12px;
+}
+.footer .last img {
+  margin-left: 15px;
+}
+.footer .tw {
+  padding: 0px 20px;
+}
+
+.nav-2 .flex.column {
+  padding: 196px 0px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.nav-2 p.text {
+  font-size: 80px;
+  text-align: center;
+}
+.nav-2 .last {
+  padding: 30px 0px;
+}
+.nav-2 .tw {
+  padding: 0px 20px;
+}
+.nav-2 .social {
+  margin-top: 36px;
 }/*# sourceMappingURL=all.css.map */
