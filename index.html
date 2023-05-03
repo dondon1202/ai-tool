@@ -8,14 +8,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet" />
-
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
   <link rel="stylesheet" href="css/all.css" />
 
   <title>Document</title>
 </head>
 
 <body>
-  <div class="container-fluid mx-auto">
+  <div class="container-fluid mx-auto" id="top">
     <div class="container mx-auto">
       <!-- Navbar -->
       <section class="nav flex items-center justify-between">
@@ -24,8 +27,8 @@
           <img class="logo-word" src="images/aitoolking.svg" alt="" />
         </div>
         <ul class="flex items-center">
-          <li class="mr-20">首頁</li>
-          <li>定價</li>
+          <li class="mr-20"><a href="index.html">首頁</a></li>
+          <li><a href="price.html">定價</a></li>
           <img src="images/Vector.svg" alt="" class="bar" name="bar" onclick="toggle()" />
         </ul>
       </section>
@@ -85,9 +88,9 @@
             <img src="images/Logo2-sm.svg" alt="" class="hidden hidden-lg" />
           </div>
           <ul class="card-group flex justify-between column-mobile">
+            
             <li>
               <img src="images/starsvg.svg" alt="" />
-
               <p class="des">
                 非常喜歡 AI工具王 提供的 AI
                 模型租賃服務，使用起來非常方便，而且效果非常好。對於我們公司的業務來說，這個服務非常重要，因為我們需要大量的數據進行分析和預測，AI工具王
@@ -101,9 +104,9 @@
                 </div>
               </div>
             </li>
-            <li>
-              <img src="images/starsvg.svg" alt="" />
 
+            <li class="hidden-sm">
+              <img src="images/starsvg.svg" alt="" />
               <p class="des">
                 作為一家醫療器材公司，我們非常關注人工智能技術的應用，而
                 AI工具王 提供的 AI
@@ -119,9 +122,9 @@
                 </div>
               </div>
             </li>
-            <li>
-              <img src="images/starsvg.svg" alt="" />
 
+            <li class="hidden-sm">
+              <img src="images/starsvg.svg" alt="" />
               <p class="des">
                 我們銀行一直在尋找能夠幫助我們提高風險控制和客戶服務的解決方案，而
                 AI工具王 提供的 AI 模型租賃服務正好滿足了我們的需求。我們使用
@@ -138,7 +141,9 @@
               </div>
             </li>
           </ul>
-
+          <div class="flex justify-center">
+            <img src="images/dot.svg" alt="" style="margin-top: 24px;">
+          </div>
       </div>
     </div>
 
@@ -170,7 +175,7 @@
 
         </div>
         <div class="toolbtn">
-          <ul class="flex justify-center items-center hidden-lgf">
+          <ul class="flex justify-center items-center hidden-lgf toolbtn-center">
             <li class="active">全部</li>
             <li>聊天</li>
             <li>影像辨識</li>
@@ -243,7 +248,7 @@
               <div class="imgbox">
                 <img src="images/Rectangle4.svg" alt="">
               </div>
-              <div class="text">
+              <div class="text text-h">
                 <h6>Sentiment Analysis API</h6>
                 <p>自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。</p>
               </div>
@@ -336,7 +341,7 @@
               <li>Instagram</li>
             </ul>
           </div>
-          <p>Back to top <img src="images/up.svg" alt=""></p>
+          <p><a href="">Back to top</a>  <img src="images/up.svg" alt=""></p>
         </div>
         <ul class="flex items-center hidden-lgf social">
           <li>Facebook</li>
@@ -348,8 +353,8 @@
         <div>
           <div class="">
             <div class="flex column">
-              <p class="text">首頁</p>
-              <p class="mt-30 text">定價</p>
+              <p class="text"><a href="index.html">首頁</a></p>
+              <p class="mt-30 text"><a href="price.html">定價</a></p>
             </div>
           </div>
           <div class="last">
@@ -364,6 +369,7 @@
       </div>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/all.js"></script>
 </body>
 

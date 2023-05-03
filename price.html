@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/all.css" />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container-fluid mx-auto" id="top">
+      <div class="container mx-auto">
+        <!-- Navbar -->
+        <section class="nav flex items-center justify-between">
+          <div class="flex items-center">
+            <img class="logo" src="images/logo.svg" alt="" />
+            <img class="logo-word" src="images/aitoolking.svg" alt="" />
+          </div>
+          <ul class="flex items-center">
+            <li class="mr-20"><a href="index.html">首頁</a></li>
+            <li><a href="price.html">定價</a></li>
+            <img
+              src="images/Vector.svg"
+              alt=""
+              class="bar"
+              name="bar"
+              onclick="toggle()"
+            />
+          </ul>
+        </section>
+        <div id="hide">
+          <!-- banner -->
+          <section class="banner">
+            <h1>用多少，<br />付多少。</h1>
+            <div class="relative-h4">
+              <h4>
+                我們相信，最靈活的取用機制，才能最大化的幫助你業務的推動。
+              </h4>
+            </div>
+
+            <img src="images/motin.svg" alt="" class="left" />
+          </section>
+
+          <!--  定價  -->
+          <section class="price">
+            <div class="flex justify-between column-mobile">
+              <h6>定價</h6>
+            </div>
+            <ul
+              class="flex card-group justify-between column-mobile wrap mt-80"
+            >
+              <li class="card">
+                <div class="bottom">
+                  <div class="card-content">
+                    <h6>琪琪</h6>
+                    <ul>
+                      <li>初級</li>
+                      <li>速度最快</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-footer flex justify-between">
+                  <div class="flex items-center">
+                    NT$5
+                    <p class="gray">／1k tokens</p>
+                  </div>
+                  <p class="flex items-end" style="font-size: 16px">
+                    開始使用 <img src="images/icon5.svg" alt="" />
+                  </p>
+                </div>
+              </li>
+
+              <li class="card">
+                <div class="bottom">
+                  <div class="card-content">
+                    <h6>昊昊</h6>
+                    <ul>
+                      <li>中級</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-footer flex justify-between">
+                  <div class="flex items-center">
+                    NT$5
+                    <p class="gray">／1k tokens</p>
+                  </div>
+                  <p class="flex items-end" style="font-size: 16px">
+                    開始使用 <img src="images/icon5.svg" alt="" />
+                  </p>
+                </div>
+              </li>
+
+              <li class="card">
+                <div class="bottom">
+                  <div class="card-content">
+                    <h6>卡卡</h6>
+                    <ul>
+                      <li>高級</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-footer flex justify-between">
+                  <div class="flex items-center">
+                    NT$5
+                    <p class="gray">／1k tokens</p>
+                  </div>
+                  <p class="flex items-end" style="font-size: 16px">
+                    開始使用 <img src="images/icon5.svg" alt="" />
+                  </p>
+                </div>
+              </li>
+
+              <li class="card">
+                <div class="bottom">
+                  <div class="card-content">
+                    <h6>杰杰</h6>
+                    <ul>
+                      <li>最高級</li>
+                      <li>資訊最完善</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-footer flex justify-between">
+                  <div class="flex items-center">
+                    NT$5
+                    <p class="gray">／1k tokens</p>
+                  </div>
+                  <p class="flex items-end" style="font-size: 16px">
+                    開始使用 <img src="images/icon5.svg" alt="" />
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <!-- 來自合作夥伴 -->
+          <section class="rules flex justify-between">
+            <h6>使用規範</h6>
+            <div class="rule mt--40">
+              <div class="rule-box">
+                <h5>守法</h5>
+                <p>請遵守相關的法規和政策，不得進行任何違法違規的活動。</p>
+              </div>
+              <div class="rule-box">
+                <h5>資訊安全</h5>
+                <p>請務必保護好自己的帳號和密碼，不得將其透露給他人。</p>
+              </div>
+              <div class="rule-box">
+                <h5>守密</h5>
+                <p>需對使用過程中產生的數據負責，不得擅自泄露數據。</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid-2 mx-auto" id="hide-2">
+      <div class="container mx-auto">
+        <!-- 這些超酷的應用，都來自 AI工具王 -->
+        <section class="tool">
+          <p class="hidden-sm">這些超酷的應用，都來自 AI工具王</p>
+          <p class="hidden-lg">這些超酷的應用，<br />都來自 AI工具王</p>
+          <div class="flex items-center search">
+            <img src="images/search.svg" alt="" /><input
+              type="text"
+              placeholder="輸入關鍵字搜尋"
+              class="mx-auto"
+            />
+          </div>
+          <div class="toolbtn flex justify-between">
+            <button class="flex items-center">
+              <p>篩選</p>
+              <img src="images/tool1.svg" alt="" />
+            </button>
+            <ul class="flex justify-between items-center hidden-smf">
+              <li class="active">全部</li>
+              <li>聊天</li>
+              <li>影像辨識</li>
+              <li>翻譯</li>
+              <li>行銷</li>
+              <li>客服</li>
+              <li>生產力</li>
+            </ul>
+            <button class="flex items-center">
+              <p>由新到舊</p>
+              <img src="images/tool2.svg" alt="" />
+            </button>
+          </div>
+          <div class="toolbtn">
+            <ul class="flex justify-center items-center hidden-lgf">
+              <li class="active">全部</li>
+              <li>聊天</li>
+              <li>影像辨識</li>
+              <li>翻譯</li>
+              <li>行銷</li>
+              <li>客服</li>
+              <li>生產力</li>
+            </ul>
+          </div>
+
+          <ul class="flex card-group justify-between column-mobile wrap">
+            <li>
+              <div class="card">
+                <div class="imgbox">
+                  <img src="images/Rectangle1.svg" alt="" />
+                </div>
+                <div class="text">
+                  <h6>Chatbot Builder</h6>
+                  <p>
+                    建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。
+                  </p>
+                </div>
+                <div class="flex justify-between line bottom">
+                  <p class="title">AI 模型</p>
+                  <p>卡卡</p>
+                </div>
+                <div class="flex justify-between line">
+                  <p>#聊天</p>
+                  <img src="images/r-icon1.svg" alt="" />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card card-gap">
+                <div class="imgbox">
+                  <img src="images/Rectangle2.svg" alt="" />
+                </div>
+                <div class="text">
+                  <h6>Image Recognition Platform</h6>
+                  <p>專業的圖像識別平台，識別圖像、分類、標記等。</p>
+                </div>
+                <div class="flex justify-between line bottom">
+                  <p class="title">AI 模型</p>
+                  <p>杰杰</p>
+                </div>
+                <div class="flex justify-between line">
+                  <p>#影像辨識</p>
+                  <img src="images/r-icon1.svg" alt="" />
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="card">
+                <div class="imgbox">
+                  <img src="images/Rectangle3.svg" alt="" />
+                </div>
+                <div class="text">
+                  <h6>Language Translation API</h6>
+                  <p>
+                    專業的語言翻譯 API，實現文本翻譯功能，支援多種格式的文本。
+                  </p>
+                </div>
+                <div class="flex justify-between line bottom">
+                  <p class="title">AI 模型</p>
+                  <p>琪琪</p>
+                </div>
+                <div class="flex justify-between line">
+                  <p>#翻譯</p>
+                  <img src="images/r-icon1.svg" alt="" />
+                </div>
+              </div>
+            </li>
+
+            <li class="mt-20">
+              <div class="card">
+                <div class="imgbox">
+                  <img src="images/Rectangle4.svg" alt="" />
+                </div>
+                <div class="text text-h">
+                  <h6>Sentiment Analysis API</h6>
+                  <p>
+                    自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。
+                  </p>
+                </div>
+                <div class="flex justify-between line bottom">
+                  <p class="title">AI 模型</p>
+                  <p>昊昊</p>
+                </div>
+                <div class="flex justify-between line">
+                  <p>#行銷</p>
+                  <img src="images/r-icon1.svg" alt="" />
+                </div>
+              </div>
+            </li>
+
+            <li class="mt-20">
+              <div class="card">
+                <div class="imgbox">
+                  <img src="images/Rectangle5.svg" alt="" />
+                </div>
+                <div class="text">
+                  <h6>Fraud Detection Platform</h6>
+                  <p>
+                    專業的語言翻譯 API，實現文本翻譯功能，支援多種格式的文本。
+                  </p>
+                </div>
+                <div class="flex justify-between line bottom">
+                  <p class="title">AI 模型</p>
+                  <p>卡卡</p>
+                </div>
+                <div class="flex justify-between line">
+                  <p>#客服</p>
+                  <img src="images/r-icon1.svg" alt="" />
+                </div>
+              </div>
+            </li>
+
+            <li class="mt-20">
+              <div class="card">
+                <div class="imgbox">
+                  <img src="images/Rectangle6.svg" alt="" />
+                </div>
+                <div class="text">
+                  <h6>Language Translation API</h6>
+                  <p>預防詐騙活動，適用於銀行、金融、電商等。</p>
+                </div>
+                <div class="flex justify-between line bottom">
+                  <p class="title">AI 模型</p>
+                  <p>杰杰</p>
+                </div>
+                <div class="flex justify-between line">
+                  <p>#生產力</p>
+                  <img src="images/r-icon1.svg" alt="" />
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="flex justify-end paging">
+            <li class="active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li><img src="images/next.svg" alt="" /></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="container mx-auto">
+        <div class="footer" id="hide-3">
+          <section class="questions flex justify-between">
+            <h6>常見問題</h6>
+            <div class="question">
+              <div
+                class="question-box flex column"
+                id="question-box"
+                onclick="openlist()"
+              >
+                <div class="title flex items-center">
+                  <img src="images/plus.svg" alt="" />
+                  <h5>如何選擇適合的AI模型？</h5>
+                </div>
+                <p class="hidden" id="hidden">隨便選</p>
+              </div>
+              <div class="question-box flex items-center">
+                <img src="images/plus.svg" alt="" />
+                <h5>租用模型的費用是如何計算的？</h5>
+              </div>
+              <div class="question-box flex items-center">
+                <img src="images/plus.svg" alt="" />
+                <h5>如何進行付款？</h5>
+              </div>
+              <div class="question-box flex items-center">
+                <img src="images/plus.svg" alt="" />
+                <h5>租用模型的期限是多久？</h5>
+              </div>
+              <div class="question-box flex items-center">
+                <img src="images/plus.svg" alt="" />
+                <h5>如果在使用過程中遇到問題，應該怎麼處理？</h5>
+              </div>
+            </div>
+          </section>
+          <div class="nav-block">
+            <div class="flex column">
+              <p>首頁</p>
+              <p class="mt-30">定價</p>
+              <div class="flex items-center word">
+                <img class="logo" src="images/logo.svg" alt="" />
+                <img class="logo-word" src="images/aitoolking.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-between last">
+            <div class="flex justify-between">
+              <p>AI工具王 © 2023</p>
+              <ul class="flex items-center hidden-smf">
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+              </ul>
+            </div>
+            <p><a href="">Back to top</a> <img src="images/up.svg" alt="" /></p>
+          </div>
+          <ul class="flex items-center hidden-lgf social">
+            <li>Facebook</li>
+            <li class="tw">Twitter</li>
+            <li>Instagram</li>
+          </ul>
+        </div>
+        <div class="nav-2 hidden-lg hide" id="hide-4">
+          <div>
+            <div class="">
+              <div class="flex column">
+                <p class="text"><a href="index.html">首頁</a></p>
+                <p class="mt-30 text"><a href="price.html">定價</a></p>
+              </div>
+            </div>
+            <div class="last">
+              <p>AI工具王 © 2023</p>
+              <ul class="flex items-center social">
+                <li>Facebook</li>
+                <li class="tw">Twitter</li>
+                <li>Instagram</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/all.js"></script>
+  </body>
+</html>

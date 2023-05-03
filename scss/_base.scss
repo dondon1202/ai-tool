@@ -14,6 +14,10 @@ img {
 *::after {
   box-sizing: boder-box;
 }
+a {
+  text-decoration: none;
+  color: white;
+}
 .container-fluid,
 .container-fluid-2 {
   max-width: 1920px;
@@ -37,6 +41,9 @@ img {
 .items-center {
   align-items: center;
 }
+.items-end {
+  align-items: end;
+}
 .column-mobile {
   @include mobile {
     flex-direction: column;
@@ -50,6 +57,9 @@ img {
 }
 .mx-auto {
   margin: 0 auto;
+}
+.mt-80 {
+  margin-top: 80px;
 }
 .mt-20 {
   margin-top: 20px;
@@ -105,4 +115,12 @@ h6 {
   @include mobile {
     font-size: 20px;
   }
+}
+
+.open {
+  // height: 100px;
+  display: block;
+}
+.hidden {
+  display: none;
 }

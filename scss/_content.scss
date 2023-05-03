@@ -36,6 +36,7 @@
       }
       p {
         color: #f2f2f2;
+        line-height: 150%;
       }
       h6 {
         margin: 26px 0px 20px 0px;
@@ -115,6 +116,7 @@
       font-size: 80px;
       font-weight: $font-w;
       text-align: center;
+      line-height: 120%;
       @include mobile {
         font-size: $font-md;
       }
@@ -186,6 +188,15 @@
         }
       }
     }
+    .toolbtn-center {
+      white-space: nowrap;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      @include mobile {
+        display: flex;
+      }
+    }
     .card-group {
       @include mobile {
         margin-top: 0px;
@@ -214,6 +225,7 @@
           .text {
             padding: 20px 32px;
             border-bottom: 1px solid #f2f2f2;
+
             h6 {
               font-size: 20px;
             }
@@ -225,6 +237,11 @@
               line-height: 150%;
               font-weight: 400;
               height: 42px;
+            }
+          }
+          .text-h {
+            @include mobile {
+              height: 100px;
             }
           }
           .line {
@@ -255,6 +272,142 @@
         color: white;
         border-radius: 16px;
       }
+    }
+  }
+}
+
+//page2
+
+.price {
+  padding: 160px 0px;
+  @include mobile {
+    padding: 120px 0px;
+  }
+  h6 {
+    line-height: 120%;
+  }
+
+  li.card {
+    width: 49%;
+    border: 1px solid #f2f2f2;
+    border-radius: 16px;
+    margin: 10px 0px;
+    @include mobile {
+      width: 100%;
+      margin-top: 20px;
+    }
+    h6 {
+      margin-top: 20px;
+    }
+    .card-content {
+      height: 254px;
+      padding: 0px 32px;
+    }
+    .bottom {
+      border-bottom: 1px solid #f2f2f2;
+    }
+    ul {
+      list-style: disc;
+      padding: 0px 32px;
+      li {
+        margin-top: 12px;
+      }
+    }
+    .card-footer {
+      font-size: 20px;
+      padding: 20px 32px;
+      .gray {
+        color: #919191;
+      }
+      img {
+        margin-left: 15px;
+        width: 10px;
+      }
+    }
+  }
+}
+
+.rules {
+  @include mobile {
+    flex-direction: column;
+  }
+  .mt--40 {
+    margin-top: -40px;
+  }
+  .rule {
+    @include mobile {
+      margin-top: 48px;
+    }
+  }
+  .rule-box {
+    border-bottom: 1px solid #525252;
+    margin-top: 40px;
+    h6 {
+      font-size: 32px;
+      font-weight: 900;
+      @include mobile {
+        font-size: 20px;
+      }
+    }
+    h5 {
+      font-size: 48px;
+      @include mobile {
+        font-size: 32px;
+      }
+    }
+
+    p {
+      font-size: 32px;
+      margin: 24px 0px 40px 0px;
+
+      @include mobile {
+        font-size: 16px;
+        line-height: 150%;
+      }
+    }
+  }
+}
+
+.questions {
+  margin: 158px 0px;
+  font-weight: 900;
+  @include mobile {
+    flex-direction: column;
+  }
+  .mt--40 {
+    margin-top: -40px;
+  }
+  .question {
+    width: 856px;
+    @include mobile {
+      margin-top: 48px;
+      width: 100%;
+    }
+  }
+  .question-box {
+    border: 1px solid #525252;
+    padding: 25px 45px;
+    border-radius: 16px;
+    margin-bottom: 15px;
+    h6 {
+      font-size: 32px;
+      font-weight: 900;
+
+      @include mobile {
+        font-size: 20px;
+      }
+    }
+    h5 {
+      font-size: 20px;
+      margin-left: 15px;
+    }
+    img {
+      width: 14px;
+      height: 14px;
+    }
+    p {
+      font-size: 16px;
+      margin: 20px 30px 0px 30px;
     }
   }
 }

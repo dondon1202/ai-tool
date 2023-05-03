@@ -18,3 +18,9 @@ function toggle() {
     bar.setAttribute("name", "bar");
   }
 }
+
+function openlist() {
+  const p = document.querySelector("#hidden");
+  // open.classList.toggle("open");
+  p.classList.toggle("hidden");
+}

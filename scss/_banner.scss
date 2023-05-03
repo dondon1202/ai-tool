@@ -13,6 +13,23 @@
       font-weight: $font-w;
     }
   }
+  .relative-h4 {
+    position: relative;
+    margin-top: 80px;
+  }
+  h4 {
+    font-size: 48px;
+    width: 636px;
+    height: 174px;
+    position: absolute;
+    right: 0;
+    @include mobile {
+      text-align: right;
+      width: 257px;
+      height: 136px;
+      font-size: 28px;
+    }
+  }
   button {
     padding: 20px 42px;
     background-color: $bgc;
@@ -30,6 +47,13 @@
     height: 180px;
     position: absolute;
     right: 0;
+    bottom: 0;
+  }
+  img.left {
+    width: 540px;
+    height: 180px;
+    position: absolute;
+    left: 0;
     bottom: 0;
   }
 }
